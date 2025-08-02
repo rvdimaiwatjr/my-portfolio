@@ -61,6 +61,50 @@
             transition: opacity 0.3s ease;
         }
 
+        /* Enhanced Dark Mode Styles for Experience and Projects */
+         body.dark-mode #experience,
+         body.dark-mode #projects,
+         body.dark-mode #certifications {
+           background-color: #0f172a !important;
+        }
+
+        body.dark-mode .experience-card {
+          background: #1e293b;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          color: #e5e7eb;
+        }
+
+        body.dark-mode .experience-card .company,
+        body.dark-mode .experience-card .job-title {
+          color: var(--accent);
+        }
+
+        body.dark-mode .experience-card .date {
+          color: #94a3b8;
+        }
+
+        body.dark-mode .experience-card li::before {
+          color: var(--accent);
+        }
+
+        body.dark-mode .project-card {
+           background: #1e293b;
+           border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode .project-title {
+          color: var(--accent) !important;
+        }
+
+        body.dark-mode .project-card p {
+          color: #e5e7eb;
+        }
+
+        body.dark-mode .tech-tag {
+           background: rgba(245, 158, 11, 0.15) !important;
+           color: var(--accent) !important;
+        }
+
         .dark-mode-toggle:hover::before {
             opacity: 1;
         }
