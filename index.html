@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renato Dimaiwat Jr. | ELV Technical Support</title>
+    <title>Renato Dimaiwat Jr. | ELV Technical Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -65,46 +65,46 @@
          body.dark-mode #experience,
          body.dark-mode #projects,
          body.dark-mode #certifications {
-           background-color: #0f172a !important;
-        }
+         background-color: #0f172a !important;
+       }
 
-        body.dark-mode .experience-card {
-          background: #1e293b;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          color: #e5e7eb;
-        }
+         body.dark-mode .experience-card {
+         background: #1e293b;
+         border: 1px solid rgba(255, 255, 255, 0.1);
+         color: #e5e7eb;
+       }
 
-        body.dark-mode .experience-card .company,
-        body.dark-mode .experience-card .job-title {
-          color: var(--accent);
-        }
+         body.dark-mode .experience-card .company,
+         body.dark-mode .experience-card .job-title {
+         color: var(--accent);
+       }
 
-        body.dark-mode .experience-card .date {
-          color: #94a3b8;
-        }
+         body.dark-mode .experience-card .date {
+         color: #94a3b8;
+       }
 
         body.dark-mode .experience-card li::before {
-          color: var(--accent);
-        }
+        color: var(--accent);
+       }
 
         body.dark-mode .project-card {
-           background: #1e293b;
-           border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+        background: #1e293b;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+       }
 
         body.dark-mode .project-title {
-          color: var(--accent) !important;
-        }
+        color: var(--accent) !important;
+       }
 
-        body.dark-mode .project-card p {
-          color: #e5e7eb;
-        }
+       body.dark-mode .project-card p {
+       color: #e5e7eb;
+       }
 
-        body.dark-mode .tech-tag {
-           background: rgba(245, 158, 11, 0.15) !important;
-           color: var(--accent) !important;
-        }
-
+       body.dark-mode .tech-tag {
+       background: rgba(245, 158, 11, 0.15) !important;
+       color: var(--accent) !important;
+      }
+        
         .dark-mode-toggle:hover::before {
             opacity: 1;
         }
@@ -742,7 +742,36 @@
                 right: 20px;
                 width: 40px;
                 height: 40px;
-            }
+           }
+           
+           .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    background-color: white;
+    color: var(--primary) !important; /* Blue text */
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary); /* Blue border */
+}
+
+/* Hover effects */
+.download-btn:hover {
+    background-color: #f8fafc; /* Slightly off-white */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode adaptation */
+body.dark-mode .download-btn {
+    background-color: white;
+    color: var(--secondary) !important; /* Dark navy text */
+    border-color: var(--accent); /* Gold border in dark mode */
+}
         }
     </style>
 </head>
@@ -755,9 +784,11 @@
 
     <!-- Header with animated background -->
     <header>
-        <div class="header-content container">
-            <h1>Renato Dimaiwat Jr.</h1>
-            <p class="tagline">ELV Technical Support | 14+ Years Experience</p>
+    <div class="header-content container">
+        <h1>Renato Dimaiwat Jr.</h1>
+        <p class="tagline">ELV Technical Support | 14+ Years Experience</p>
+        
+        <div class="contact-download-wrapper">  <!-- New wrapper div -->
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -772,13 +803,20 @@
                     <span>rvdimaiwatjr@gmail.com</span>
                 </div>
             </div>
+            
+            <a href="resume.pdf" download="Renato_Dimaiwat_Resume.pdf" 
+               class="download-btn pulse-on-hover"
+               style="background-color:Transparent; color:#FFD700;">
+               <i class="fas fa-download"></i> Download Resume (PDF)
+           </a>
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Navigation -->
     <nav>
         <div class="nav-container container">
-            <div class="logo">RVD</div>
+            <div class="logo">RD</div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>           
@@ -795,7 +833,7 @@
         <div class="container">
             <h2>Professional Profile</h2>
             <p style="font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-                ELV Technical Support Specialist with <strong>14+ years of experience</strong> in advanced electronic systems, technical support, and infrastructure maintenance. Expertise in <strong>CCTV, Access Control Systems, Networking, and IT Support</strong>, with a proven track record of optimizing system performance through diagnostics, preventative maintenance, and precise installations. Adept at troubleshooting complex technical issues and delivering top-tier support in high-stakes environments.
+                ELV Technical Support with <strong>14+ years of experience</strong> in advanced electronic systems, technical support, and infrastructure maintenance. Expertise in <strong>CCTV, Access Control Systems, Networking, and IT Support</strong>, with a proven track record of optimizing system performance through diagnostics, preventative maintenance, and precise installations. Adept at troubleshooting complex technical issues and delivering top-tier support in high-stakes environments.
             </p>
         </div>
     </section>
@@ -806,7 +844,7 @@
             <h2>Work Experience</h2>
             
             <div class="experience-card">
-                <h3 class="job-title">ELV Technical Support</h3>
+                <h3 class="job-title">ELV Technical Support Engineer</h3>
                 <span class="company">Capital Security Systems</span>
                 <span class="date">Feb 2018 - Present | Doha, Qatar</span>
                 <ul>
@@ -827,7 +865,7 @@
                 <span class="company">Circuit Solutions Inc.</span>
                 <span class="date">May 2011 - Feb 2018 | Pasig City, Philippines</span>
                 <ul>
-                    <li>Provided technical support for CCTV, traffic lights, and EAS systems.</li>
+                    <li>Provided technical support for CCTV, Traffic lights, and Access Control Systems.</li>
                     <li>Installing/configuring computer hardware, software, systems and networks..</li>
                     <li>Designed system layouts for security projects.</li>
                     <li>Conducted site surveys and client training.</li>
@@ -1075,7 +1113,7 @@
                 <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Location</h3>
-                    <p>Doha, Qatar</p>
+                    <p>Old Airport, Doha, Qatar</p>
                 </div>
             </div>
         </div>
@@ -1086,9 +1124,9 @@
         <div class="social-links">
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
         </div>
-        <p>&copy; 2024 Renato Dimaiwat Jr. | ELV Technical Specialist</p>
+        <p>&copy; 2025 Renato Dimaiwat Jr. | ELV Technical Specialist</p>
     </footer>
 
     <script>
