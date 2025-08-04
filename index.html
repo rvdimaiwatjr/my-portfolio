@@ -317,7 +317,8 @@
         
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 25px;
+            
         }
         
         .nav-links a {
@@ -342,7 +343,34 @@
         .nav-links a:hover::after {
             width: 100%;
         }
-        
+
+        /* Buttons */
+        .cv-download {
+            display: inline-block;
+            padding: 12px 30px;  /* Oblong shape */
+            background-color: #0066cc;  /* Professional blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;  /* Pill shape */
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cv-download:hover {
+            background-color: #0052a3;  /* Darker blue on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .cv-download i {
+            margin-right: 8px;
+        }
+
         /* Sections */
         section {
             padding: 5rem 0;
@@ -786,7 +814,7 @@ body.dark-mode .download-btn {
     <header>
     <div class="header-content container">
         <h1>Renato Dimaiwat Jr.</h1>
-        <p class="tagline">ELV Technical Support | 14+ Years Experience</p>
+        <p class="tagline">ELV Technical Support | 13+ Years Experience</p>
         
         <div class="contact-download-wrapper">  <!-- New wrapper div -->
             <div class="contact-info">
@@ -803,12 +831,6 @@ body.dark-mode .download-btn {
                     <span>rvdimaiwatjr@gmail.com</span>
                 </div>
             </div>
-            
-            <a href="resume.pdf" download="Renato_Dimaiwat_Resume.pdf" 
-               class="download-btn pulse-on-hover"
-               style="background-color:Transparent; color:#FFD700;">
-               <i class="fas fa-download"></i> Download Resume (PDF)
-           </a>
         </div>
     </div>
 </header>
@@ -816,7 +838,7 @@ body.dark-mode .download-btn {
     <!-- Navigation -->
     <nav>
         <div class="nav-container container">
-            <div class="logo">RD</div>
+            <div class="logo"><strong>Portfolio</strong></div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>           
@@ -824,6 +846,9 @@ body.dark-mode .download-btn {
                 <a href="#projects">Projects</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
+                <a href="resume.pdf" download="Renato_Dimaiwat_Resume.pdf" class="cv-download" download>
+               <i class="fas fa-download"></i> Download CV
+           </a>
             </div>
         </div>
     </nav>
@@ -833,7 +858,7 @@ body.dark-mode .download-btn {
         <div class="container">
             <h2>Professional Profile</h2>
             <p style="font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-                ELV Technical Support with <strong>14+ years of experience</strong> in advanced electronic systems, technical support, and infrastructure maintenance. Expertise in <strong>CCTV, Access Control Systems, Networking, and IT Support</strong>, with a proven track record of optimizing system performance through diagnostics, preventative maintenance, and precise installations. Adept at troubleshooting complex technical issues and delivering top-tier support in high-stakes environments.
+                ELV Technical Support with <strong>13+ years of experience</strong> in advanced electronic systems, technical support, and infrastructure maintenance. Expertise in <strong>CCTV, Access Control Systems, Networking, and IT Support</strong>, with a proven track record of optimizing system performance through diagnostics, preventative maintenance, and precise installations. Adept at troubleshooting complex technical issues and delivering top-tier support in high-stakes environments.
             </p>
         </div>
     </section>
